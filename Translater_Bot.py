@@ -10,3 +10,5 @@ async def bot_trans(message: types.Message):
     tarjimon = tarjima.translate(matn,dest='en')
     tarjima_qilindi = tarjimon.text
     await message.reply(tarjima_qilindi)
+if name == 'main':
+    executor.start_polling(dp, skip_updates=True)
